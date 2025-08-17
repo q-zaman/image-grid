@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-color:beige;
+        }
+
+        .grid-container{
+            display: grid;
+            grid-template-columns: 190px 60px 250px 250px;
+            grid-template-rows: 250px 60px 60px 60px 6px 14px 50px 250px;
+            height: 750px;
+            width: 750px;
+            background-color: white;
+            border: 20px solid white;
+            border-radius: 20px;
+        }
+        .item {
+            border: 4px solid white;
+            img{width:100%;height:100%;object-fit:cover;}
+            
+        }
+/* Css for each item here */
+.box-1{
+    background-color:red;
+    grid-column: span 2;
+}
+.box-2{
+    background-color:blue;
+    grid-column: span 2;
+    grid-row: span 4;
+}
+.box-3{
+    background-color:green;
+}
+.box-4{
+    background-color:orange;
+    grid-row: span 3;
+    
+}
+.box-5{
+    background-color:purple;
+}
+.box-6{
+    background-color:brown;
+}
+.box-7{
+    background-color:pink;
+    grid-row: span 3;
+}
+.box-8{
+    background-color:teal;
+    grid-row: span 3;
+}
+.box-9{
+    background-color:gold;
+    grid-row: span 4;
+    
+}
+.box-10{
+    background-color:gray;
+    grid-row: span 4;
+}
+.box-11{
+    background-color:cyan;
+    grid-row: span 1;
+    grid-column: span 2;
+}
+
+
+</style>
+</head>
+<body>
+    <!-- Dont change main "Div" Class -->
+    <div class="grid-container">
+        <div class="item box-1">
+            <img src="https://images.pexels.com/photos/32936394/pexels-photo-32936394.jpeg" alt="">
+        </div>
+        <div class="item box-2">
+            <img src="https://images.pexels.com/photos/33243391/pexels-photo-33243391.jpeg" alt="">
+        </div>
+        <div class="item box-3">
+            <img src="https://images.pexels.com/photos/32849129/pexels-photo-32849129.jpeg" alt="">
+        </div>
+        <div class="item box-4">
+            <img src="https://images.pexels.com/photos/33204971/pexels-photo-33204971.jpeg" alt="">
+        </div>
+        <div class="item box-5">
+            <img src="https://images.pexels.com/photos/26616496/pexels-photo-26616496.jpeg" alt="">
+        </div>
+        <div class="item box-6">
+            <img src="https://images.pexels.com/photos/32553571/pexels-photo-32553571.jpeg" alt="">
+        </div>
+        <div class="item box-7">
+            <img src="https://images.pexels.com/photos/32377236/pexels-photo-32377236.jpeg" alt="">
+        </div>
+        <div class="item box-8">
+            <img src="https://images.pexels.com/photos/29175801/pexels-photo-29175801.jpeg" alt="">
+        </div>
+        <div class="item box-9">
+            <img src="https://images.pexels.com/photos/32946028/pexels-photo-32946028.jpeg" alt="">
+        </div>
+        <div class="item box-10">
+            <img src="https://images.pexels.com/photos/32946051/pexels-photo-32946051.jpeg" alt="">
+        </div>
+        <div class="item box-11">
+            <img src="https://images.pexels.com/photos/16047553/pexels-photo-16047553.jpeg" alt="">
+        </div>
+
+    </div>
+</body>
+</html>
